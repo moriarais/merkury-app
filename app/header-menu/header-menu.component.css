@@ -1,0 +1,98 @@
+.header-manu-wrapper {
+    height: 65px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-manu-wrapper .material-icons.side-arrow-icon {
+    padding: 5px 15px 5px 2px;
+    color: #4492ff;
+    font-size: 10px;
+    transform: rotate(180deg);
+    flex-grow: 0;
+}
+.header-manu-wrapper .material-icons.reorder-icon {
+    padding: 20px 10px 20px 0px;
+    color: #09092c;
+    font-size: 21px;
+    flex-grow: 0;
+}
+.header-manu-wrapper .material-icons.search-icon {
+    padding: 20px 10px;
+    color: #09092c;
+    font-size: 21px;
+    flex-grow: 0;
+}
+.header-manu-wrapper .material-icons.email-icon {
+    padding: 20px 10px 20px 35px;
+    color: #09092c;
+    font-size: 21px;
+}
+.header-manu-wrapper .notifications-wrapper {
+    position: relative;
+}
+.header-manu-wrapper .notifications-wrapper .round-button-notifications {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4679BD;
+    color: #fff;
+    font-size: 7px;
+    text-align: center;
+}
+.header-manu-wrapper .material-icons.notifications-icon {
+    padding: 20px 10px;
+    color: #09092c;
+    font-size: 21px;
+}
+.header-manu-wrapper .material-icons.profile-icon {
+    padding: 20px 0px 20px 10px;
+    color: #09092c;
+    font-size: 21px;
+}
+.header-manu-wrapper .material-icons.arrow-icon {
+    padding: 13px 3px 0px 4px;
+    color: #09092c;
+    font-size: 10px;
+    transform: rotate(90deg);
+}
+.round-button-circle-wrapper {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+.round-button-circle-wrapper .round-button-circle {
+    width: 110px;
+    height: 28px;
+    border-radius: 36px;
+    border-color: #b5c9e4;
+    border-width: 1px;
+    overflow: hidden;
+    background: #4679BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8px;
+}
+.round-button-circle-wrapper .round-button-circle .material-icons.add-icon {
+    color: #b5c9e4;
+    font-size: 10px;
+    padding-right: 10px;
+}
+.round-button-circle-wrapper .round-button-circle .round-button-text {
+    color: #fff;
+    font-size: 12px;
+}
+@media screen and (max-width:520px) {
+    .header-manu-wrapper {
+        justify-content: space-between;
+    }
+    
+    .round-button-circle-wrapper {
+        display: none;
+    }
+}

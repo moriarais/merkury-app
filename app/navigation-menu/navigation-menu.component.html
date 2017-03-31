@@ -1,0 +1,21 @@
+<div class="navigation-manu-wrapper">
+
+    <div class="navigation-header-wrapper">
+        <i class="material-icons brand-icon">panorama_fish_eye</i>
+        <div class="navigation-menu-brand-header"><a routerLink="/home">Merkury</a></div>
+    </div>
+
+    <ul class="navigation-menu-nav" [ngClass]="{'responsive': openResponsiveNavgiation }">
+
+        <li *ngFor="let item of sideMenuList" class="navigation-menu-brand" [class.selected]="item === selectedItem" (click)="onSelect(item)">
+            <i class="material-icons navigation-icon">{{iconsList[item]}}</i>
+            <a class="" routerLink="{{'/'+item.toLowerCase()}}">{{item}}</a>
+        </li>
+
+        <li class="navigation-menu-brand icon">
+            <span class="icon-text" [innerHtml]="selectedItem"></span>
+            <a class="responsive-menu-icon" (click)="responsiveNavigationClick()">&#9776;</a>
+        </li>
+    </ul>
+
+</div>
